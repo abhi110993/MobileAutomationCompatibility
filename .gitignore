@@ -1,0 +1,10 @@
+target
+test-output
+src/test/resources/drivers/*
+
+.project
+.classpath
+.settings
+.idea
+.log
+.DS_Store

@@ -1,0 +1,25 @@
+baseUrl: http://10.0.1.86/tatoc
+tatocGameBaseUrl: http://10.0.1.86/tap_classroom/TicTacToe/
+
+homePage: 
+  searchTerm: QA Infotech
+  
+resultPage:
+  resultText: results
+
+apiURLForTest: "http://www.google.com/recaptcha/api/image?c=03AHJ_VusCznXyzoZu52EFNdd0Qlbw5acd7nFkCHYCGsCxynkjzYOgWpC3K3d1e5slWvu6_wtRqqcDK0Yfz2PYjlzS4U0U0CEGxjqie9-ritno5KoWuxs-6RYfH3c9OH9Neng04jCRk5JHrs0SGENYP8_X1IThYTHOBtdzCwWgz_r8ZWbPZMii4Zmuws3cgsug8R2cHPgsTItY&th=,P86wi7ulMF-VCLi2Y2udF4jfzuDwAAAASKAAAAAH2ADLMnwYeef-tzRnNaq7xmZ5IAOMx_gwSqwL-rmvi-ML7wIaW0gGQL24yeRPmeX_X6j1wSC1Dl1G6cLn47G1KaGbC7Vk8As_5lSBPU-FAW4UIxWYQ7pXxLLGhyodLvT17wyvhbide3j9iHqs6WcH8-2CZvu6MvEIYc4C-nS3MVnN6AX6Z0P-c_iJ5Ag2c8Yy7n3l-anc_DlPdzLvPcK0WBuTbDMF3qjjnwmfb6gE3omAZusLhBbQ5jrDovt7PxmnSdNLpriVEj9csT1pOxM"
+
+database:
+  host: 10.0.1.86
+  name: tatoc
+  user: tatocuser
+  password: tatoc01
+  query1: "select name, passkey from credentials where id IN(Select id from identity where symbol = '?')"
+  url :  http://10.0.1.86/tatoc/advanced/rest
+  getRequestUrl : http://10.0.1.86/tatoc/advanced/rest/service/token/
+  postRequestUrl : http://10.0.1.86/tatoc/advanced/rest/service/register
+  
+email:
+    recepients: 
+        recepient1: anshulmathur@qainfotech.net
+        recepient2: prashantshukla@qainfotech.com
