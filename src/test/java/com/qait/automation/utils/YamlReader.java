@@ -109,6 +109,7 @@ public class YamlReader {
 		return object;
 	}
 
+	@SuppressWarnings("unused")
 	public static int generateUniqueRandomNumber(int minRange, int maxRange) {
 
 		ArrayList<Integer> list = new ArrayList<Integer>();

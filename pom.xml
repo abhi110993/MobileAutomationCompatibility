@@ -13,7 +13,7 @@
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<testxml>testngxml</testxml>
-		<seleniumver>2.53.1</seleniumver>
+		<seleniumver>3.0.1</seleniumver>
 		<maven.test.failure.ignore>true</maven.test.failure.ignore>
 	</properties>
 
@@ -21,8 +21,13 @@
 		<dependency>
 			<groupId>org.testng</groupId>
 			<artifactId>testng</artifactId>
-			<version>6.8.7</version>
+			<version>6.10</version>
 			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>io.appium</groupId>
+			<artifactId>java-client</artifactId>
+			<version>4.0.0</version>
 		</dependency>
 		<dependency>
 			<groupId>commons-net</groupId>

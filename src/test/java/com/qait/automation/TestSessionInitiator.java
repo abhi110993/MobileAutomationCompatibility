@@ -15,9 +15,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.Reporter;
 
-import com.qait.demo.keywords.HomePageActions;
-import com.qait.demo.keywords.LoginPageActions;
-import com.qait.demo.keywords.ResultsPageActions;
+import com.qait.demo.keywords.GooglePageActions;
 
 public class TestSessionInitiator {
 
@@ -38,20 +36,15 @@ public class TestSessionInitiator {
 	 * Initiating the page objects
 	 * 
 	 */
-	public HomePageActions homePage;
-	public ResultsPageActions resultPage;
-	public LoginPageActions loginPage;
-	
+	public GooglePageActions googlePage;
 	public TakeScreenshot takescreenshot;
+	
 	public WebDriver getDriver() {
 		return this.driver;
 	}
 
 	private void _initPage() {
-		loginPage = new LoginPageActions(driver);
-		homePage = new HomePageActions(driver);
-		resultPage = new ResultsPageActions(driver);
-		
+		googlePage = new GooglePageActions(driver);
 	}
 
 	/**
@@ -80,7 +73,7 @@ public class TestSessionInitiator {
 
 	private Map<String, String> _getSessionConfig() {
 		String[] configKeys = { "tier", "browser", "seleniumserver",
-				"seleniumserverhost", "timeout", "driverpath" };
+				"seleniumserverhost", "timeout", "driverpath" ,"appiumServer","app_file_path"};
 		Map<String, String> config = new HashMap<String, String>();
 		for (String string : configKeys) {
 			config.put(string, getProperty("./Config.properties", string));
